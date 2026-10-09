@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -106,7 +105,102 @@
     .footer {
       margin-top: 27px;
       color: #8995b1;
-      font-size: 12px;
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ارتباط با ما</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1420;
+      --card: #171e2e;
+      --text: #f2f4f8;
+      --muted: #9aa5ba;
+      --telegram: #229ed9;
+      --eitaa: #f7790a;
+      --bale: #2fb98f;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Vazirmatn", Tahoma, "Segoe UI", sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 36px 24px 28px;
+      text-align: center;
+      background: var(--card);
+      border-radius: 24px;
+    }
+
+    .logo { font-size: 34px; margin-bottom: 12px; }
+
+    h1 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+
+    .subtitle {
+      font-size: 14px;
+      line-height: 1.9;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      border-radius: 16px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform .15s ease, filter .15s ease;
+    }
+
+    .social-button:hover { transform: translateY(-2px); filter: brightness(1.08); }
+    .social-button:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+
+    .telegram { background: var(--telegram); }
+    .eitaa    { background: var(--eitaa); }
+    .bale     { background: var(--bale); }
+
+    /* مربع سفید پشت لوگو */
+    .icon {
+      flex: none;
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      background: #fff;
+      border-radius: 14px;
+    }
+
+    .icon svg { width: 26px; height: 26px; }
+    .icon img { width: 30px; height: 30px; object-fit: contain; }
+
+    .telegram .icon svg { fill: var(--telegram); }
+
+    .social-button span:last-child { flex: 1; text-align: center; padding-inline-end: 44px; }
+
+    .footer { margin-top: 20px; color: var(--muted); font-size: 12px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .social-button { transition: none; }
     }
   </style>
 </head>
@@ -121,26 +215,33 @@
       برای ارتباط با ما، یکی از پیام‌رسان‌های زیر را انتخاب کنید.
     </p>
 
-    <!-- آدرس لینک‌های خودت را جایگزین کن -->
-
     <a class="social-button telegram"
-       href="https://t.me/YOUR_USERNAME"
+       href="https://t.me/Qlg_404"
        target="_blank" rel="noopener noreferrer">
-      <span class="icon">➤</span>
+      <span class="icon" aria-hidden="true">
+        <!-- لوگوی تلگرام -->
+        <svg viewBox="0 0 24 24"><path d="M21.8 3.2 2.6 10.6c-.9.3-.9 1.2-.1 1.5l4.9 1.5 1.9 5.9c.2.6.9.8 1.4.4l2.7-2.2 5 3.7c.5.4 1.3.1 1.4-.6L23 4.5c.2-.9-.6-1.6-1.2-1.3zM9.6 13.3l8.1-5.9c.2-.1.4.1.2.3l-6.600 6.200-.3 3.200z"/></svg>
+      </span>
       <span>ورود به تلگرام</span>
     </a>
 
     <a class="social-button eitaa"
-       href="https://eitaa.com/YOUR_USERNAME"
+       href="https://eitaa.com/Qlg_404"
        target="_blank" rel="noopener noreferrer">
-      <span class="icon">✉</span>
+      <span class="icon" aria-hidden="true">
+        <!-- لوگوی ایتا -->
+        <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/eitaa.svg" alt="" width="30" height="30" loading="lazy">
+      </span>
       <span>ورود به ایتا</span>
     </a>
 
     <a class="social-button bale"
-       href="https://ble.ir/YOUR_USERNAME"
+       href="https://ble.ir/Qlg_404"
        target="_blank" rel="noopener noreferrer">
-      <span class="icon">●</span>
+      <span class="icon" aria-hidden="true">
+        <!-- لوگوی بله -->
+        <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/bale.svg" alt="" width="30" height="30" loading="lazy">
+      </span>
       <span>ورود به بله</span>
     </a>
 
