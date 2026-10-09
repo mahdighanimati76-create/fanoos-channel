@@ -1,1 +1,152 @@
 
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>راه‌های ارتباط با ما</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top, #26345e 0%, transparent 48%),
+        linear-gradient(145deg, #080c18, #111a30);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 32px 24px;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 28px;
+      background: rgba(255,255,255,.06);
+      box-shadow: 0 25px 70px rgba(0,0,0,.35);
+      text-align: center;
+    }
+
+    .logo {
+      width: 82px;
+      height: 82px;
+      margin: 0 auto 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #637cff, #9b65ed);
+      font-size: 38px;
+      box-shadow: 0 10px 30px #637cff35;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: #b8c2da;
+      font-size: 14px;
+      line-height: 2;
+      margin-bottom: 28px;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      min-height: 62px;
+      margin-top: 15px;
+      padding: 14px;
+      border-radius: 16px;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      transition: transform .2s, filter .2s;
+    }
+
+    .social-button:active {
+      transform: scale(.97);
+    }
+
+    .telegram {
+      background: linear-gradient(110deg, #168bd2, #27b7ee);
+    }
+
+    .eitaa {
+      background: linear-gradient(110deg, #bd3546, #f06469);
+    }
+
+    .bale {
+      background: linear-gradient(110deg, #168b65, #27bd91);
+    }
+
+    .social-button:hover {
+      filter: brightness(1.1);
+    }
+
+    .icon {
+      font-size: 25px;
+    }
+
+    .footer {
+      margin-top: 27px;
+      color: #8995b1;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="logo">✦</div>
+
+    <h1>به صفحه ما خوش آمدید</h1>
+
+    <p class="subtitle">
+      برای ارتباط با ما، یکی از پیام‌رسان‌های زیر را انتخاب کنید.
+    </p>
+
+    <!-- آدرس لینک‌های خودت را جایگزین کن -->
+
+    <a class="social-button telegram"
+       href="https://t.me/YOUR_USERNAME"
+       target="_blank" rel="noopener noreferrer">
+      <span class="icon">➤</span>
+      <span>ورود به تلگرام</span>
+    </a>
+
+    <a class="social-button eitaa"
+       href="https://eitaa.com/YOUR_USERNAME"
+       target="_blank" rel="noopener noreferrer">
+      <span class="icon">✉</span>
+      <span>ورود به ایتا</span>
+    </a>
+
+    <a class="social-button bale"
+       href="https://ble.ir/YOUR_USERNAME"
+       target="_blank" rel="noopener noreferrer">
+      <span class="icon">●</span>
+      <span>ورود به بله</span>
+    </a>
+
+    <div class="footer">
+      راه‌های ارتباطی ما
+    </div>
+  </main>
+</body>
+</html>
